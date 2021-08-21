@@ -31,3 +31,5 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
+    - name: Copy Files server
+      run: cp -r ../laravel-vue/* /var/www/laravelvue
